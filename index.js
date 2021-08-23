@@ -19,7 +19,7 @@ app.set("view engine", "ejs");
 //Tell the index.js to look into views folder for the EJS files
 app.set("views", "./views");
 
-app.listen(8000, function (err) {
+app.listen(process.env.PORT, function (err) {
   if (err) {
     console.log(`Error while running to the server - ${err}`);
     return;
