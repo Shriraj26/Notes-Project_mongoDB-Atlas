@@ -1,9 +1,6 @@
 const mongoose = require("mongoose");
-const uri =
-  "mongodb+srv://NotesUser:Notes123@cluster0.9ogkm.mongodb.net/Notes_App_development_db?retryWrites=true&w=majority";
-//const uri = 'mongodb://localhost:27017/myapp';
 
-//MONGODB_URI is = mongodb+srv://NotesUser:Notes123@cluster0.9ogkm.mongodb.net/Notes_App_development_db?retryWrites=true&w=majority
+const uri = process.env.MONGODB_URI;
 
 mongoose.connect(uri, { useNewUrlParser: true });
 
